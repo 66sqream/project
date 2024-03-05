@@ -1,0 +1,288 @@
+$bg: #F9FAFF;
+$text: #000;
+$blue: #1B68DC;
+$white: #fff;
+$hover: #10428d;
+$gray: #888888;
+$darkblue: #032A66;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-family: "Inter", sans-serif;
+    color: $text;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    margin-bottom: 900px;
+    background: $bg;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    background: $bg;
+    .hero-block{
+        display: flex;
+        flex-direction: column;
+        gap: 87px;
+        align-items: center;
+        background: url(../img/nachalclass.png) ;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        header{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            width: 1787px;
+            padding: 11px 0px;
+            .header-con{
+                display: flex;
+                align-items: center;
+                gap: 190px;
+                .logo{
+                    display: flex;
+                    width: 100px;
+                    height: 100px;
+                }
+                .text{
+                    display: flex;
+                    align-items: center;
+                    gap: 150px;
+                    a{
+                        color: $text;
+                        font-size: 20px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .hero-block-con {
+            display: flex;
+            flex-direction: column;
+            max-width: 1787px;
+            gap: 50px;
+            width: 100%;
+            .text{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 26px;
+                width: 1241px;
+                p{
+                    color: $white;
+                    font-size: 30px;
+                }
+                h1,h2{
+                    color: $white;
+                    font-weight: 400;
+                    font-size: 30px;
+                }
+            }
+            .commission {
+                p {                
+                    color: $white;
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .infa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .infa-con{
+            display: flex;
+            flex-direction: column;
+            max-width: 1787px;
+            width: 100%;
+            gap: 90px;
+            .row {
+                display: flex;
+                justify-content: space-between;
+                .block-txt {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    h4 {
+                        font-size: 32px;
+                        font-weight: 400;
+                    }
+                    p {
+                        color: $blue;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                h3 {
+                    color: $blue;
+                    font-size: 32px;
+                    font-weight: 400;
+                }
+                .p-txt {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    p {
+                        font-size: 30px;
+                    }
+                }
+                &:nth-child(3){
+                    padding-bottom: 90px;
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        height: 90%;
+        background: $darkblue;
+        position: fixed; 
+        z-index: -899; 
+        width: 100%;
+        margin: 0 auto;
+        bottom: 0;
+        padding: 80px 0px;
+        .footer-con {
+            display: flex;
+            max-width: 1787px;
+            justify-content: space-between;
+            width: 100%;
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                width: 666px;
+                .carcase{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    h3 {
+                        color: $white;
+                        font-weight: 400;
+                        font-size: 28px;
+                    }
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        p {
+                            color: $white;
+                            font-size: 20px;
+                        }
+                    }
+                    &:nth-child(3){
+                        gap: 2px;
+                        h3{
+                            font-size: 20px;
+                        }
+                        .text {
+                            gap: 2px;
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    li {
+                        a {
+                            color: $white;
+                            font-weight: 400;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                align-items: flex-end;
+                gap: 60px;
+                flex-direction: column;
+                .row {
+                    display: flex;
+                    gap: 122px;
+                    .carcase{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        h3 {
+                            color: $white;
+                            font-weight: 400;
+                            font-size: 28px;
+                        }
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+                            p {
+                                color: $white;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .column {
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    gap: 30px;
+                    &:nth-child(2){
+                        .carcase{
+                            display: flex;
+                            align-items: flex-end;
+                            gap: 2px;
+                            h3{
+                                font-size: 20px;
+                            }
+                            .text {
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: flex-end;
+                                gap: 2px;
+                            }
+                        }
+    
+                    }
+                }
+                .icons{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-between;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
